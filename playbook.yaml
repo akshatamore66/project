@@ -1,0 +1,12 @@
+---
+- name: Deploy Docker Container
+  hosts: webserver
+
+  tasks:
+
+  - name: pull docker image
+    command: docker pull moreakshata/tomcat:1.0
+    ignore_errors: yes
+
+  - name: create a docker container
+    command: docker run -itdp 8080:8080 moreakshata/tomcat:1.0
