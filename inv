@@ -1,2 +1,2 @@
 [webserver]
-172.31.3.175
+172.31.3.175 admin=ec2-user
